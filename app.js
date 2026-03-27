@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require ('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
@@ -14,6 +16,8 @@ app.use(bodyParser.urlencoded({ extended:false }));
 app.get('/', (req, res)=>res.status(200).send({
     message: 'Biemnvenida a la API REST de compras.',
 }))
+//creando rutas
+require('./routes/route_categoria')(app);
 const port = parseInt(process.env.PORT, 10) || 8000;
 app.set('port', port);
 const server = http.createServer(app);
