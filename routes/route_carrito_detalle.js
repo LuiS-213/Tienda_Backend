@@ -13,5 +13,6 @@ const detalleController = require('../controllers/controller_carrito_detalle');
 module.exports = (app) => {
     app.post('/api/detalles', detalleController.create);
     app.get('/api/detalles', detalleController.list);
+    
 };
 */
