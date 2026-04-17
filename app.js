@@ -1,6 +1,11 @@
 require('dotenv').config();
+const cors = require('cors');
 
 const express = require ('express');
+app.use(cors({
+  origin: 'http://localhost:5173' // cambia según tu frontend
+}));
+
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 //Tipo de servidor que realizaremos
