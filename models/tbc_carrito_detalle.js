@@ -39,7 +39,8 @@ module.exports = (sequelize, DataTypes) => {
 }, {
   sequelize,
   modelName: 'tbc_carrito_detalle',
-  tableName: 'tbc_carrito_detalles' // Asegúrate que coincida con Workbench
+  tableName: 'tbc_carrito_detalles', // Asegúrate que coincida con Workbench
+  
 });
   
   // ¡Ya eliminamos la basura de aquí abajo que estaba causando el error!
